@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+  The Blog Website - Categories
+{% endblock %}
+
+{% block content %}
+
+<h1>Categories</h1>
+
+<ul>
+  {% for x in categories %}
+    <li>{{ x.Name }} </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock %}
